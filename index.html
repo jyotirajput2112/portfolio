@@ -10,117 +10,118 @@
 </head>
 <body>
 
-    <!-- Header / Hero Section -->
+    <!-- Header / Hero Section (Centered Name & Side-by-side Links) -->
     <header class="hero">
         <div class="container">
             <h1 class="fade-in">Jyoti Rajput</h1>
             <p class="tagline">AWS DevOps Engineer | Bengaluru, India</p>
             
-            <!-- Contact & Social Links (Clickable) -->
+            <!-- Contact & Social Links side-by-side -->
             <div class="contact-links">
                 <a href="tel:6261497113" class="btn"><i class="fa-solid fa-phone"></i> 6261497113</a>
                 <a href="mailto:jrajput0021@gmail.com" class="btn"><i class="fa-solid fa-envelope"></i> jrajput0021@gmail.com</a>
                 <a href="https://github.com/jyotirajput2112" target="_blank" class="btn"><i class="fa-brands fa-github"></i> GitHub</a>
                 <a href="https://www.linkedin.com/in/jyoti-rajput-51ba9118b" target="_blank" class="btn"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-                <a href="assets/resume.pdf" target="_blank" class="btn cv-btn"><i class="fa-solid fa-file-arrow-down"></i> Download CV</a>
+                <a href="assets/resume.pdf" target="_blank" class="btn cv-btn"><i class="fa-solid fa-file-arrow-down"></i> CV</a>
             </div>
         </div>
     </header>
 
-    <!-- Professional Summary Section -->
-    <section class="section container">
-        <h2>Professional Summary</h2>
-        <p class="summary-text">
-            AWS DevOps Engineer with 3 years of experience in CI/CD pipeline management, cloud infrastructure, containerization, and production monitoring. Skilled across core AWS services, Docker, Kubernetes, Terraform, Jenkins, GitHub Actions, and Ansible, with growing expertise in observability using Prometheus and Grafana. Experienced in application monitoring, troubleshooting, release management, and supporting scalable cloud-based environments.
-        </p>
-    </section>
+    <!-- Main Content Grid: Left (Summary & Skills), Right (Projects & Experience) -->
+    <div class="main-container container">
+        
+        <!-- Left Sidebar (Summary & Skills) -->
+        <aside class="left-column">
+            <!-- Professional Summary Section -->
+            <section class="section-box">
+                <h2>Professional Summary</h2>
+                <p class="summary-text">
+                    AWS DevOps Engineer with 3 years of experience in CI/CD pipeline management, cloud infrastructure, containerization, and production monitoring. Skilled across core AWS services, Docker, Kubernetes, Terraform, Jenkins, GitHub Actions, and Ansible, with growing expertise in observability using Prometheus and Grafana.
+                </p>
+            </section>
 
-    <!-- Technical Skills Section -->
-    <section class="section container">
-        <h2>Technical Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <h3>AWS Services</h3>
-                <p>EC2, S3, IAM, VPC, Lambda, RDS, DynamoDB, CloudWatch, CloudTrail, ECS, EKS, ECR, CloudFormation, Route 53, CloudFront, API Gateway, SNS, SQS</p>
-            </div>
-            <div class="skill-card">
-                <h3>DevOps Tools</h3>
-                <p>Docker, Kubernetes, Terraform, Jenkins, GitHub Actions, Ansible, CI/CD Pipelines, Git & GitHub</p>
-            </div>
-            <div class="skill-card">
-                <h3>Monitoring & Observability</h3>
-                <p>AWS CloudWatch, Prometheus, Grafana</p>
-            </div>
-            <div class="skill-card">
-                <h3>Scripting & OS</h3>
-                <p>Linux (basics), Python (basics), Shell Scripting</p>
-            </div>
-        </div>
-    </section>
+            <!-- Technical Skills Section -->
+            <section class="section-box">
+                <h2>Technical Skills</h2>
+                <div class="skill-category">
+                    <h3>AWS Services</h3>
+                    <p>EC2, S3, IAM, VPC, Lambda, RDS, DynamoDB, CloudWatch, CloudTrail, ECS, EKS, ECR, CloudFormation, Route 53, CloudFront, API Gateway, SNS, SQS</p>
+                </div>
+                <div class="skill-category">
+                    <h3>DevOps Tools</h3>
+                    <p>Docker, Kubernetes, Terraform, Jenkins, GitHub Actions, Ansible, CI/CD, Git & GitHub</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Monitoring</h3>
+                    <p>AWS CloudWatch, Prometheus, Grafana</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Scripting & OS</h3>
+                    <p>Linux, Python (basics), Shell Scripting</p>
+                </div>
+            </section>
+        </aside>
 
-    <!-- Work Experience Section -->
-    <section class="section container">
-        <h2>Work Experience</h2>
-        <div class="experience-card">
-            <h3>AWS DevOps Engineer</h3>
-            <span class="company-duration">Innotab Technologies Pvt Ltd • Bengaluru, India (06/2023 – Present)</span>
-            <ul class="exp-list">
-                <li>Managed and monitored CI/CD pipelines using Jenkins and GitHub Actions for build and deployment activities.</li>
-                <li>Worked with Git and GitHub repositories for source code management and version control.</li>
-                <li>Created and managed Docker containers for application deployment.</li>
-                <li>Assisted in Kubernetes deployment and container orchestration activities.</li>
-                <li>Worked on AWS services including EC2, S3, IAM, VPC, and EKS.</li>
-                <li>Monitored Linux servers and analyzed logs for troubleshooting issues.</li>
-                <li>Supported deployment and release management activities.</li>
-                <li>Used AWS CloudWatch for application monitoring and log analysis.</li>
-                <li>Coordinated with development and operations teams during release cycles.</li>
-                <li>Maintained deployment reports and technical documentation.</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="section container">
-        <h2>Featured Projects</h2>
-        <div class="projects-grid">
+        <!-- Right Main Content (Projects & Experience) -->
+        <main class="right-column">
             
-            <!-- Project 1: DeployPulse -->
-            <div class="project-card">
-                <h3>DeployPulse – Uptime & Infrastructure Monitoring Platform</h3>
-                <p>Cloud-native uptime monitoring service featuring a real-time interactive search dashboard, popup alerts, and system telemetry with Prometheus instrumentation and Gitflow staging/production environments.</p>
-                <div class="tech-stack"><span>Node.js</span> <span>Docker</span> <span>Gitflow</span> <span>Prometheus</span> <span>Render</span></div>
-                <a href="https://deploypulse-prod.onrender.com" target="_blank" class="project-link">Prod App</a>
-                <a href="https://deploypulse-staging.onrender.com" target="_blank" class="project-link">Staging App</a>
-                <a href="https://github.com/jyotirajput2112/deploypulse" target="_blank" class="project-link">GitHub</a>
-            </div>
+            <!-- Projects Section -->
+            <section class="section-box">
+                <h2>Featured Projects</h2>
+                
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <h3>DeployPulse – Uptime & Infrastructure Monitoring</h3>
+                    <p>Cloud-native uptime monitoring service featuring a real-time interactive search dashboard, popup alerts, and system telemetry with Prometheus instrumentation and Gitflow staging/prod environments.</p>
+                    <div class="tech-stack"><span>Node.js</span> <span>Docker</span> <span>Gitflow</span> <span>Prometheus</span> <span>Render</span></div>
+                    <a href="https://deploypulse-prod.onrender.com" target="_blank" class="project-link">Prod App</a>
+                    <a href="https://deploypulse-staging.onrender.com" target="_blank" class="project-link">Staging</a>
+                    <a href="https://github.com/jyotirajput2112/deploypulse" target="_blank" class="project-link">GitHub</a>
+                </div>
 
-            <!-- Project 2: LocalBizHub -->
-            <div class="project-card">
-                <h3>LocalBizHub – Small Business Marketplace</h3>
-                <p>Full-stack multi-tier web application connecting small businesses and customers, orchestrated using Docker Compose & Nginx, with automated GitHub Actions CI/CD pipelines.</p>
-                <div class="tech-stack"><span>React</span> <span>Node.js</span> <span>Docker Compose</span> <span>Nginx</span> <span>Render</span></div>
-                <a href="https://localbizhub.onrender.com" target="_blank" class="project-link">Live App</a>
-                <a href="https://github.com/jyotirajput2112/LocalBizHub" target="_blank" class="project-link">GitHub</a>
-            </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <h3>LocalBizHub – Small Business Marketplace</h3>
+                    <p>Full-stack multi-tier web application connecting small businesses and customers, orchestrated using Docker Compose & Nginx, with automated GitHub Actions CI/CD pipelines.</p>
+                    <div class="tech-stack"><span>React</span> <span>Node.js</span> <span>Docker Compose</span> <span>Nginx</span> <span>Render</span></div>
+                    <a href="https://localbizhub.onrender.com" target="_blank" class="project-link">Live App</a>
+                    <a href="https://github.com/jyotirajput2112/LocalBizHub" target="_blank" class="project-link">GitHub</a>
+                </div>
 
-            <!-- Project 3: SolarSphere -->
-            <div class="project-card">
-                <h3>SolarSphere (Source Urja)</h3>
-                <p>Interactive web application allowing users to explore cosmic and infrastructure guides through numeric inputs (1-7), containerized with Docker & Nginx, and automated via GitHub Actions.</p>
-                <div class="tech-stack"><span>HTML/JS</span> <span>Docker</span> <span>Nginx</span> <span>GitHub Actions</span> <span>Render</span></div>
-                <a href="https://solarsphere.onrender.com" target="_blank" class="project-link">Live App</a>
-                <a href="https://github.com/jyotirajput2112/SolarSphere" target="_blank" class="project-link">GitHub</a>
-            </div>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <h3>SolarSphere (Source Urja)</h3>
+                    <p>Interactive web application allowing users to explore cosmic and infrastructure guides through numeric inputs (1-7), containerized with Docker & Nginx, and automated via GitHub Actions.</p>
+                    <div class="tech-stack"><span>HTML/JS</span> <span>Docker</span> <span>Nginx</span> <span>GitHub Actions</span> <span>Render</span></div>
+                    <a href="https://solarsphere.onrender.com" target="_blank" class="project-link">Live App</a>
+                    <a href="https://github.com/jyotirajput2112/SolarSphere" target="_blank" class="project-link">GitHub</a>
+                </div>
+            </section>
 
-        </div>
-    </section>
+            <!-- Work Experience Section -->
+            <section class="section-box">
+                <h2>Work Experience</h2>
+                <div class="experience-card">
+                    <h3>AWS DevOps Engineer</h3>
+                    <span class="company-duration">Innotab Technologies Pvt Ltd • Bengaluru, India (06/2023 – Present)</span>
+                    <ul class="exp-list">
+                        <li>Managed and monitored CI/CD pipelines using Jenkins and GitHub Actions for build and deployment activities.</li>
+                        <li>Created and managed Docker containers and assisted in Kubernetes deployment and container orchestration.</li>
+                        <li>Worked on core AWS services including EC2, S3, IAM, VPC, and EKS.</li>
+                        <li>Monitored Linux servers, analyzed logs via AWS CloudWatch, and handled troubleshooting.</li>
+                        <li>Coordinated with development and operations teams during release cycles.</li>
+                    </ul>
+                </div>
+            </section>
+
+        </main>
+    </div>
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2026 Jyoti Rajput. All rights reserved.</p>
     </footer>
 
-    <!-- JavaScript File Link -->
     <script src="script.js"></script>
 </body>
 </html>
