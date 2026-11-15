@@ -289,12 +289,13 @@ footer {
     margin-top: 40px;
 }
 {
-    .hero-image-container img.profile-img {
-    width: 270px;
-    height: 270px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #c084fc;
-    box-shadow: 0 0 30px rgba(192, 132, 252, 0.4);
+   .hero-image-container img.profile-img {
+    width: 270px !important;
+    height: 270px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    border: 4px solid #c084fc !important;
+    box-shadow: 0 0 30px rgba(192, 132, 252, 0.4) !important;
+}
 
-}}
+}
